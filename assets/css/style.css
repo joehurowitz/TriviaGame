@@ -65,6 +65,48 @@ li{
 	text-align: center;
 }
 
+#start{
+border: 2px solid red;
+height: 50px;
+width :200px;
+margin: 0%;
+
+}
+#game{
+	display:none;
+}
+#donePage{
+	display: none;
+	background-image: url("green_cup.png");
+}
+
+#startPage{
+
+	
+	text-align: center;
+	background-image: url("green_cup.png");
+}
+#mainGamePage{
+	background-image: url("green_cup.png");
+}
+
+#done{
+border: 2px solid black;
+height: 50px;
+width :200px;
+margin: 0%;
+text-align: center;
+padding-bottom: 75px;
+
+}
+#doneDisplay{
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid black;
+	height: 40px;
+	
+}
+
 
 
 

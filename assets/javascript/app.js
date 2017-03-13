@@ -1,5 +1,15 @@
   $(document).ready(function(){
    
+    $("#start").click(function(){
+      $("#startPage").hide();
+
+      $("#game").fadeIn();
+      run();
+    });
+
+
+
+
     //  Set our number counter 
     var timer = 30;
     //  Variable that will hold our interval ID when we execute
@@ -22,13 +32,6 @@
     var answerFour=4;
     var correctChoices=0;
     var incorrectChoices =0;
-    
-
- 
-    //$("#start").on("click",function(){
-       // run();
-       // }
-
 
 
     $("#oneChoice1").one("click",function(){
@@ -256,6 +259,12 @@ $("#fourChoice1").one("click",function(){
 
     });
 
+       $("#done").click(function done(){
+        stop();
+        //$("#game").hide();
+        //$("#donePage").fadeIn();
+       });
+
     
 
     function run() {
@@ -280,15 +289,18 @@ $("#fourChoice1").one("click",function(){
  
     function stop() {
       //  Clears our intervalId
-
-
-
       //  We just pass the name of the interval
       //  to the clearInterval function.
       clearInterval(intervalId);
-      $("#display").html("Game over . You have " + correctChoices + " right and " + incorrectChoices + " wrong ");
+      $("#game").hide();
+        $("#donePage").fadeIn();
+
+
+      $("#display").html("GAME OVER : You had " + correctChoices + " right and " + incorrectChoices + " wrong ");
+      $("#doneDisplay").html("GAME OVER : You had " + correctChoices + " right and " + incorrectChoices + " wrong ");
+
     }
-    //start();
-    run();
+
+    
 
   });

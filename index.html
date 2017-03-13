@@ -7,26 +7,37 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-<!--<script src="https://code.jquery.com/jquery.js"></script>-->
- 
-
-
-
   </head>
+
   <body>
   
-<div>
-<button id="start"><h1> START </h1></button>
-</div>
+
 
 <div class="container">
+ 
+ <div class ="row">
+ <div class="col-md-3"></div>
+
+   <div class="col-md-6" id="startPage">
+    <div id="bigTitle" style="text-align: center;"><h1> Trivial Musical Trivia</h1> </div>
+
+  <button id="start"> START GAME </button>
+  </div>
+   <div class="col-md-3"></div>
+
+ </div>
+
+
+
   <div class="row">
     <div class="column-md-3"></div>
+     <section  id="game">
+      <div class="column-md-6" id="mainGamePage" >
 
-      <div class="column-md-6" style="background-color: rgba(115, 149, 91, 1);">
-
+        
     <div id="bigTitle" style="text-align: center;"><h1> Trivial Musical Trivia</h1> </div>
     <br>
+   
     <div id="show-number" style="text-align: center;"></div>
     <br>
     
@@ -139,13 +150,46 @@
 
  <br>
     <div id="display"></div>
+    <br>
+
+    <div style="text-align: center;">
+     <button id="done"><h2> DONE </h2></button> 
 
 
-    <!--<button id="stop">Stop</button>
-    <button id="resume">Resume</button>-->
+    </div>
+
+  </section>
+   
     
      <div class="column-md-3"></div>
     
+
+<div class ="row">
+ <div class="col-md-3"></div>
+
+   <div class="col-md-6" id="donePage">
+    <div id="bigTitle" style="text-align: center;"><h1> Trivial Musical Trivia</h1> </div>
+
+<div id="doneDisplay">
+  <h2></h2>
+</div>
+
+
+  <!--<button id="start"> START GAME </button>-->
+  </div>
+   <div class="col-md-3"></div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
     

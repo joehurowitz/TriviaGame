@@ -1,0 +1,72 @@
+body{
+	background-image: url("seamless_paper_texture.png");
+}
+
+h1{
+
+	font-size: 60px;
+}
+
+ul{
+      margin:0;
+      padding: 0;
+    }
+li{
+  display: inline;
+}
+#bigTitle{
+	text-align: center;
+	color: blue;
+	font-size: 50px;
+}
+#show-mumber{
+
+
+	text-align: center;
+}
+
+#Question1 {
+	text-align: center;
+}
+
+#buttons1  {
+	text-align: center;
+}
+#Question2 {
+	text-align: center;
+}
+ #buttons2 {
+ 	text-align: center;
+ }
+ #Question3 {
+	text-align: center;
+ }
+
+#buttons3{
+	text-align: center;
+}
+#Question4{
+	text-align: center;
+}
+
+#buttons4{
+	text-align: center;
+}
+
+#display {
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid black;
+	height: 40px;
+}
+
+
+.radio-inline{
+	text-align: center;
+}
+
+
+
+
+
+

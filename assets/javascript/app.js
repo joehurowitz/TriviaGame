@@ -4,6 +4,7 @@
       $("#startPage").hide();
 
       $("#game").fadeIn();
+
       run();
     });
 
@@ -16,9 +17,9 @@
     //  the "run" function
     var intervalId;
     //  When the stop button gets clicked, run the stop function.
-    $("#stop").on("click", stop);
+    //$("#stop").on("click", stop);
     //  When the resume button gets clicked, execute the run function.
-    $("#resume").on("click", run);
+    //$("#resume").on("click", run);
    
 
     var userChoiceOne;
@@ -32,6 +33,7 @@
     var answerFour=4;
     var correctChoices=0;
     var incorrectChoices =0;
+    var unansweredQuestions=0;
 
 
     $("#oneChoice1").one("click",function(){
@@ -295,9 +297,28 @@ $("#fourChoice1").one("click",function(){
       $("#game").hide();
         $("#donePage").fadeIn();
 
+        if(correctChoices + incorrectChoices===4){
+         unansweredQuestions = 0;
+        }
+        else if(correctChoices + incorrectChoices ==3){
+          unansweredQuestions =1;
+        }
+        else if(correctChoices + incorrectChoices === 2){
+          unansweredQuestions = 2;
+        }
+        else if(correctChoices + incorrectChoices === 1){
+          unansweredQuestions = 3;
+        }
+        else if(correctChoices + incorrectChoices === 0){
+          unansweredQuestions = 4;
+        }
+        else{
+          unansweredQuestions ===0;
+        }
+
 
       $("#display").html("GAME OVER : You had " + correctChoices + " right and " + incorrectChoices + " wrong ");
-      $("#doneDisplay").html("GAME OVER : You had " + correctChoices + " right and " + incorrectChoices + " wrong ");
+      $("#doneDisplay").html("GAME OVER : You had " + correctChoices + " right " + incorrectChoices + " wrong " + " and " +unansweredQuestions + " unanswered. ");
 
     }
 
